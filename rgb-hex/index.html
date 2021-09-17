@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>RGB and HEX colors</title>
+</head>
+<body>
+    <div>
+        <div>
+            <button value="random">Random colors</button>
+            <button value="convert">Convert rgb to hex</button>
+            <button value="gradient">make gradients</button>
+        </div>
+        <div class="inputs hide">
+            <label for="color">Enter color values</label>
+            <input type="range" id="color" min=0 max=255>
+            <p>Hex equivalent is: <span class="hex"></span></p>
+        </div>
+        <p class="p rgbp">This color is: <span class="rgb-span"></span></p>
+        <p class="p">Hex equivalent is: <span class="hex-span"></span></p>
+        <script src="index.js"></script>
+    </div>
+</body>
+</html>
