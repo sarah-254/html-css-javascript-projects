@@ -11,8 +11,9 @@ function binToDec(){
   }
 
   for(i=0;i<userInput.length;i++) {
-    if (userInput[i] > 1 || isNaN(userInput[i])) {
+    if ((userInput[i] > 1) || (/^\d+$/.test(userInput))==false) {
       decimal.textContent = 'Values other than 0 or 1 have been entered';
+      break
     } else if (userInput.length <= 8) {
       let text = 'Decimal equivalent of ' + userInput + ' is: ';
       decimal.textContent = text + parseInt(userInput, 2);
